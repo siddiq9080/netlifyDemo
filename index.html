@@ -1,169 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahara desert</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <style>
-        .container {
-  width: 100%;
-  height: auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
-    url(Main.jpg);
-  background-position: center;
-  /* background-repeat: no-repeat; */
-  background-size: cover;
-  padding-left: 8%;
-  padding-right: 8%;
-  box-sizing: border-box;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="Fname">First Name :</label>
+      <input
+        type="text"
+        id="Fname"
+        name="Fname"
+        placeholder="Enter your First name"
+      />
 
-.navbar {
-  width: 100%;
-  height: 11%;
-  display: flex;
-  align-items: center;
-}
+      <br />
+      <br />
 
-.nav {
-  flex: 1;
-  text-align: right;
-}
+      <label for="Mname">Middle Name :</label>
+      <input
+        type="text"
+        id="Mname"
+        name="Mname"
+        placeholder="Enter your Middle name"
+      />
 
-.navbar ul li {
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 80px;
-  transition: all 0.2s;
-}
+      <br />
+      <br />
 
-.navbar ul li:hover {
-  padding-left: 15px;
-  transition: transformY(15px);
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: white;
-  margin-left: 10px;
-}
+      <label for="Lname">Last Name :</label>
+      <input
+        type="text"
+        id="Lname"
+        name="Lname"
+        placeholder="Enter your last name"
+      />
 
-.navbar ul li a:hover {
-  color: red;
-  transform: translateY(20px);
-}
+      <br />
+      <br />
 
-.maincontent {
-  margin-top: 20px;
-  width: 100%;
-  display: flex;
-  background-color: rgb(57, 64, 64);
-}
+      <label for="email">Email :</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Example: abc@gmail.com"
+      />
 
-.leftcontent {
-  float: left;
-  width: 45%;
-  height: 380px;
-  background-color: beige;
-  align-content: center;
-}
+      <br /><br />
 
-.leftcontent h1 {
-  color: black;
-  margin: 30px;
-  padding-left: 100px;
-}
+      <label for="pass">Password</label>
 
-.leftcontent p {
-  color: black;
-  margin: 20px;
-}
+      <input
+        type="password"
+        name="password"
+        id="pass"
+        placeholder="Enter strong password"
+      />
 
-.rightcontent {
-  width: 52%;
-  height: 380px;
-  background-color: pink;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
+      <br /><br />
 
-.imgs {
-  width: 150px;
-  height: 150px;
-  margin: 10px;
-  transition: transform 0.3s;
-}
-
-.imgs:hover {
-  transform: translateY(-10px);
-}
-
-.footer {
-  width: 100%;
-  height: 25px;
-  background-color: black;
-  margin-top: 20px;
-}
-
-.footer p {
-  color: white;
-  float: right;
-  margin-top: 3px;
-  margin-right: 50px;
-}
-
-    </style>
-</head>
-<body>
-    <div class="container">
-
-<div class="navbar">
-<div class="navlogo">
-    <h1> LOGO</h1>
-    <nav>
-<ul><h3>
-    
-    <li><a href="#"> Home</a> </li>
-    <li><a href="#"> About </a></li>
-    <li><a href="#"> Cantact</a></li>
-    <li><a href="#"> Religion</a> </li>
-    <li><a href="#"> Service</a> </li>
-        </h3>
-</ul>
-</nav>
-</div>
-
-</div>
-
-<div class="maincontent">
-
-<div class="leftcontent">
-
-    <h1> Sahara Desert</h1>
-    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit laboriosam quia vitae accusantium aperiam dignissimos inventore, quisquam harum voluptates beatae?</p>
-    <br>
-   
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vero cum magnam nesciunt culpa veniam quod cumque quae. Eos exercitationem alias cum? Rerum consectetur atque dolor facere reprehenderit veniam laudantium?</p>
-</div>
-
-<div class="rightcontent">
-
-<img class="imgs" src="desert1.jpg">
-<img   class="imgs"src="desert2.jpg">
-<img  class="imgs" src="desert3.jpg">
-<img  class="imgs" src="desert4.jpg">
-</div>
-
-</div>
-<div class="footer">
-    <p>Designed by <span>Siddiq.N</i></p>
-</div>
-
-</div>
-
-
-
-
-</body>
+      <label for="file">Upload a file here :</label>
+      <input type="file" name="File" id="file" />
+    </form>
+  </body>
 </html>
