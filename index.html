@@ -5,6 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahara desert</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <style>
+        .container {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    url(Main.jpg);
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 11%;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  flex: 1;
+  text-align: right;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 80px;
+  transition: all 0.2s;
+}
+
+.navbar ul li:hover {
+  padding-left: 15px;
+  transition: transformY(15px);
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+
+.navbar ul li a:hover {
+  color: red;
+  transform: translateY(20px);
+}
+
+.maincontent {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  background-color: rgb(57, 64, 64);
+}
+
+.leftcontent {
+  float: left;
+  width: 45%;
+  height: 380px;
+  background-color: beige;
+  align-content: center;
+}
+
+.leftcontent h1 {
+  color: black;
+  margin: 30px;
+  padding-left: 100px;
+}
+
+.leftcontent p {
+  color: black;
+  margin: 20px;
+}
+
+.rightcontent {
+  width: 52%;
+  height: 380px;
+  background-color: pink;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.imgs {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.imgs:hover {
+  transform: translateY(-10px);
+}
+
+.footer {
+  width: 100%;
+  height: 25px;
+  background-color: black;
+  margin-top: 20px;
+}
+
+.footer p {
+  color: white;
+  float: right;
+  margin-top: 3px;
+  margin-right: 50px;
+}
+
+    </style>
 </head>
 <body>
     <div class="container">
