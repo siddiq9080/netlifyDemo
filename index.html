@@ -4,65 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
+
+    <style>
+      .container {
+        width: 400px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        display: block;
+        width: 100%;
+        height: 30px;
+        margin-bottom: 10px;
+      }
+
+      .submit {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        background-color: blue;
+        opacity: 0.8;
+        color: white;
+        transition: all 0.3s linear;
+      }
+
+      .submit:hover {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+
+      .reset {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: yellow;
+        opacity: 0.8;
+        color: black;
+        transition: all 0.3s linear;
+      }
+
+      .reset:hover {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+    </style>
   </head>
   <body>
-    <form action="">
-      <label for="Fname">First Name :</label>
-      <input
-        type="text"
-        id="Fname"
-        name="Fname"
-        placeholder="Enter your First name"
-      />
+    <div class="container">
+      <form action="">
+        <label for="Fname">First Name :</label>
+        <input
+          type="text"
+          id="Fname"
+          name="Fname"
+          placeholder="Enter your First name"
+          required
+        />
 
-      <br />
-      <br />
+        <label for="Mname">Middle Name :</label>
+        <input
+          type="text"
+          id="Mname"
+          name="Mname"
+          placeholder="Enter your Middle name"
+          required
+        />
 
-      <label for="Mname">Middle Name :</label>
-      <input
-        type="text"
-        id="Mname"
-        name="Mname"
-        placeholder="Enter your Middle name"
-      />
+        <label for="Lname">Last Name :</label>
+        <input
+          type="text"
+          id="Lname"
+          name="Lname"
+          placeholder="Enter your last name"
+          required
+        />
 
-      <br />
-      <br />
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Example: abc@gmail.com"
+          required
+        />
 
-      <label for="Lname">Last Name :</label>
-      <input
-        type="text"
-        id="Lname"
-        name="Lname"
-        placeholder="Enter your last name"
-      />
+        <label for="pass">Password</label>
 
-      <br />
-      <br />
+        <input
+          type="password"
+          name="password"
+          id="pass"
+          placeholder="Enter strong password"
+          required
+        />
 
-      <label for="email">Email :</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Example: abc@gmail.com"
-      />
+        <label for="file">Upload a file here :</label>
+        <input type="file" name="File" id="file" />
+        <br /><br />
 
-      <br /><br />
-
-      <label for="pass">Password</label>
-
-      <input
-        type="password"
-        name="password"
-        id="pass"
-        placeholder="Enter strong password"
-      />
-
-      <br /><br />
-
-      <label for="file">Upload a file here :</label>
-      <input type="file" name="File" id="file" />
-    </form>
+        <input type="submit" class="submit" value="Submit" /> &nbsp; &nbsp;
+        <input type="reset" class="reset" />
+      </form>
+    </div>
   </body>
 </html>
